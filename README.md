@@ -5,3 +5,5 @@ hola, això és un canvi en el document
 un altre canvi en local
 
 tercer canvi. aquest en remot
+
+vaig fent canvis
