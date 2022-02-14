@@ -1,1 +1,8 @@
-document.write("<h1>Hello World</h1>");
+var nameuser = "john";
+let lastname = "carter";
+
+nameuser = "pepe";
+
+const PI = 3.1415
+
+console.log(PI)
