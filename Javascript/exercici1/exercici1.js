@@ -36,27 +36,36 @@ window.alert(typeof a);
 var d = prompt ("introdueix un número");
 var e = prompt ("introdueix un altre número");
 
-if (d=e) {window.alert( "el primer i el segon són iguals")
+if (d==e) {window.alert( "el primer i el segon són iguals")
 } else 
 if  (d>e) {
 window.alert("el primer és major")}
 else {
     window.alert("el segon és major")
-}
+};
 
 //5 fer servir algoritme saber si número es parell o senar.
+var b = prompt ("introdueix un número enter")
+var total = b % 2
+/* si la resta de la divisió és 0 es parell si no, senar
+*/
+if (total == 0) {
+    window.alert(b + " és parell");
+} else {
+    window.alert(b + " és senar");
+}
 
 
 //6 alt i pes i IMC i mostrar per pantalla
 var pes = prompt ("escriu el teu pes en kg");
-var alcada = prompt ("escriu la teva alçada en m")
+var alcada = prompt ("escriu la teva alçada en m");
 
-let imc = pes / (alcada*alcada)
+let imc = pes / (alcada ^ 2);
 
-console.log(imc)
-window.alert("El teu índex de massa corporal és " + imc)
+console.log(imc);
+window.alert("El teu índex de massa corporal és " + imc);
 
 //7 let marca=total+16+4 total 20
 
-let marca = "total " + (16 + 4)
-console.log(marca)
+let marca = "total " + (16 + 4);
+console.log(marca);
