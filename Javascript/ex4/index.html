@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src=/Javascript/ex4/ex4.js></script>
+    <script>//4 Crea un programa que mostri per pantalla la data en format català. Per exemple: 11 de setembre de 1714.
+        let data = new Date()
+        let di = data.getDate();
+        let mes = data.getMonth();
+        let any = data.getFullYear();
+        let nomMes = "";
+        
+        if (mes== 0) {nomMes="Gener"};
+        if (mes== 1) {nomMes="Febrer"};
+        if (mes== 2) {nomMes="Març"};
+        if (mes== 3) {nomMes="Abril"};
+        if (mes== 4) {nomMes="Maig"};
+        if (mes== 5) {nomMes="Juny"};
+        if (mes== 6) {nomMes="Juliol"};
+        if (mes== 7) {nomMes="Agost"};
+        if (mes== 8) {nomMes="Setembre"};
+        if (mes== 9) {nomMes="Octubre"};
+        if (mes== 10) {nomMes="Novembre"};
+        if (mes== 11) {nomMes="Desembre"};
+        
+        document.write("Avui és dia " + di + " de " + nomMes + " de l'any " + any);</script>
+</body>
+</html>

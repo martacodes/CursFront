@@ -8,48 +8,66 @@
   </head>
   <body>
     <script>
-       //1 Math
-       let a = 4.758;
+      //1 Math
+      let a = 4.758;
 
-       let min = 1;
-       let max = 2;
+      //arrodoniment
+      let arro = Math.round(a);
+      console.log("arrodonit " + arro);
 
-       let arro = Math.round(a);
-       console.log("arrodonit " + arro);
+      //arrodoniment cap a baix
+      let arDalt = Math.floor(a);
+      console.log("arrodoneix cap a baix " + arDalt);
 
-       let arDalt = Math.floor(a);
-       console.log("arrodoneix cap a baix " + arDalt);
+      //arrodoniment cap a dalt
+      let arBaix = Math.ceil(a);
+      console.log("arrodoneix cap a dalt " + arBaix);
 
-       let arBaix = Math.ceil(a);
-       console.log("arrodoneix cap a dalt " + arBaix);
+      //arrel quadrada
+      let qua = Math.sqrt(a);
+      console.log("arrel quadrada " + qua);
 
-       let qua = Math.sqrt(a);
-       console.log("arrel quadrada " + qua);
+      //nombre absolut
+      let abs = Math.abs(a);
+      console.log("absolut " + abs);
 
-       let abs = Math.abs(a);
-       console.log("absolut " + abs);
+      //potència
+      let pow = Math.pow(a, 10);
+      console.log("potència " + pow);
 
-       let pow = Math.pow(a,10);
-       console.log("potència " + pow);
+      //mínim
+      let minu = Math.min(12, 9, 10, 5, a);
+      console.log("min " + minu);
 
-       let minu = Math.min(12, 9, 10, 5, a);
-       console.log("min " + minu);
+      //màxim
+      let maxi = Math.max(12, 9, 10, 5, a);
+      console.log("max " + maxi);
 
-       let maxi = Math.max(12, 9, 10, 5, a);
-       console.log("max " + maxi);
+      //aleatori
+      let ran = Math.random();
+      console.log("aleatori " + ran);
 
-       let ran = Math.random();
-       console.log("aleatori " + ran);
+      //aleatori dins d'un rang.
+      /*
+       Primer arrodoniment i després aleatori * 30 per exemple
+       Dona primer un valor entre 0 i 1, s'arrodoneix i al multiplicar per
+       30 dona un enter.
+       */
+      let ranmm = Math.floor(Math.random() * 30);
+      console.log("aleatori entre 1-2" + ranmm);
+    </script>
+    <script>
+      //2 Math
+      // no donava bé per la formula.
+      let c = parseInt(prompt("Escriu un número"));
+      let d = parseInt(prompt("Escriu un altre número"));
 
-       let ranmm = Math.random()*((min-max)+min);
-       console.log("aleatori entre 1-2" + ranmm);
+      let min = Math.min(c,d);
+      let max = Math.max(c,d);
 
-       //2 Math
-       let c = prompt("Escriu un número min");
-       let d = prompt("Escriu un altre número max");
-
-       let ran2mm = Math.random()*((c-d)+c)
-       console.log("Valor aleatori entre els números donats" + ran2mm)
+      let ran2mm = Math.floor(Math.random() * (max - min) + min);
+      console.log("Valor aleatori entre els números donats " + ran2mm);
+      document.write("Valor aleatori entre els números donats " + ran2mm);
     </script>
   </body>
 </html>
