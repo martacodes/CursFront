@@ -1,0 +1,12 @@
+header {
+    background:blue;
+
+}
+h1 {
+    font: 30px 'Courier New' bold;
+}
+footer {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: small; 
+    text-align: center;;
+}
