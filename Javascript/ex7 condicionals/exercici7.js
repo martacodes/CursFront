@@ -45,3 +45,4 @@ switch (user) {
         console.log("Vostè és visitant");
         break;
 }
+
