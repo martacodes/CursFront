@@ -20,7 +20,7 @@ Controla les accions que poden fer cadascún d’ells amb un if
 amb if anidado, if else if... un if dentro del else*/
 
 let user;
-user = "editor";
+user = "anonymus";
 /*
 if (user == "admin") {
     console.log("Vostè és administrador, pot editar, eliminar i veure la informació")
