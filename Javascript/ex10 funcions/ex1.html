@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         1. Crea una funció que es digui Saludar, que tingui tres argument: nom, cognom, sexe. Crida a aquesta funció amb diferents escenaris, per tal d’escriure per pantalla:
+        // Benvinguda [nom] [Cognoms] si és dona.
+        // Benvingut [nom] [Cognoms] si és home.
+        // També, tingues en compte un escenari, per quan no passis a la funció el paràmetre sexe.
+//         let nom;
+//         let cognom;
+//         let genere;
+
+//         function saludar(nom, cognom, genere) {
+//             if (genere == "dona") {
+//                 document.write("Benvinguda, " + nom + " " + cognom);
+//             } if (genere == "home") {
+//                 document.write("Benvingut, " + nom + " " + cognom);
+//             } else {console.log("falta el gènere")}
+//         }
+//         nom = "Marta";
+//         cognom = "Farré";
+//         genere = "dona";
+// console.log(saludar(nom,cognom,genere))
+
+function saludar2 (nom,cognom,genere) {
+    switch (genere) {
+        case "dona":
+        document.write("Benvinguda, " + nom + " " + cognom);
+            break;
+        case "home":
+        document.write("Benvingut, " + nom + " " + cognom);
+            break;
+        default:
+        console.log("et manca el genere")
+    }
+}
+saludar2("Marta","Farré","dona");
+
+    </script>
+</body>
+
+</html>
