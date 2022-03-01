@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Crea una funció on se li pasa 2 números. I que retorni el menor.
+
+        // function esMenor(a,b) {
+        //     switch (a,b) {
+        //         case (a>b):
+        //             console.log("El número més petit és" + b);
+        //             break;
+        //         case (a<b):
+        //             console.log("El número més petit és" + a);
+        //             break;
+        //         case (a=b):
+        //             console.log("Són iguals! " + a)
+        //             break;
+        //     }
+        // }
+        // esMenor(60,3);
+
+        // esMenor(2,1);
+        // esMenor(2,2);
+
+let a = 0;
+let b = 0;
+function esMenor1(a,b) {
+    if (a>b) {
+        return b;
+    } else if (a<b) {
+        return a;
+    } else {
+        return a;
+    }
+}
+let menor = 0;
+menor=esMenor1(10,12);
+console.log("el número més petit és " + menor);
+menor=esMenor1(12,10);
+console.log("el número més petit és " + menor);
+menor=esMenor1(11,11);
+console.log("el número més petit és " + menor);
+
+    </script>
+</body>
+
+</html>
