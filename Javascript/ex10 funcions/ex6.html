@@ -12,13 +12,18 @@
 let isEmail="";
 function hasAt(isEmail) {
 if (isEmail.includes("@")) {
-    console.log("L'adreça de correu és vàlida")}
+    return true
+    //console.log("L'adreça de correu és vàlida") <-- versió antiga amb missatge
+    }
 else {
-    console.log("Això no és una adreça de correu")
+   return false
+    //console.log("Això no és una adreça de correu") <-- versió antiga amb missatge
 } }
 
 hasAt("gmail.com");
+console.log(hasAt("gmanil.com"));
 hasAt("marta@gmail.com");
+console.log(hasAt("marta@gmail.com"));
 
  </script>
 </body>

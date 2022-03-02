@@ -12,20 +12,49 @@
 let frase = " ";
 //a. Funció per Imprimir la primera meitat dels caràcters de la cadena.
 function Meitat(frase) {
-    let long = parseInt(frase.length);
-    console.log(long);
-    let meitat = (frase.string) / 2;
-    console.log(meitat)
+    let meitat = Math.floor(frase.length/2);
     let resta = frase.slice(0,meitat);
-    document.write("Aquesta és la meitat de la cadena " + resta);
+    return resta;
 }
-Meitat("Bon diaa");
-/* b. Funció per Imprimir el darrer caràcter.
-c. Funció per Imprimir-ho en forma inversa.
-d. Funció per Imprimir cada caràcter del String separat amb un guió.
-e. Funció per Imprimir la quantitat de vocals sense accents emmagatzemades. */
+let meitat1 = Meitat("Bon diaa");
+document.write("Aquesta és la meitat de la cadena " + meitat1 + "<br>");
 
+//b. Funció per Imprimir el darrer caràcter.
+function darrer(frase) {
+    let resta1 = frase.slice(frase.length-1); //es pot fer també amb frase.slice(-1) <-- segons diu un company
+    return resta1
+}
+let restaFora = darrer("Paraula");
+document.write("Aquest és l'últim caràcter " + restaFora);
 
+// c. Funció per Imprimir-ho en forma inversa.
+function reverse(frase) {
+    let long = frase.length;
+    let inversio = "";
+    while (long>=0) {
+        inversio = inversio + frase.charAt(long);long--
+    }
+    return inversio
+    }
+let a = reverse("Hola, molt bon dia");
+console.log(a);
+function reverse2(frase) {
+   let invertida = frase.split("").reverse().join(""); //aquest és més correcte. divideix per caràcter, gira i reuneix.
+    console.log(invertida);
+}
+reverse2("Hola, bon dia!")
+
+//d. Funció per Imprimir cada caràcter del String separat amb un guió.
+function guio(frase) {
+    let separatGuio =  frase.split("").join("-");
+    console.log(separatGuio)
+}
+guio("bona tarda!")
+
+//e. Funció per Imprimir la quantitat de vocals sense accents emmagatzemades.
+function vocals(frase) {
+    patro[aeiou]/gi
+}
     </script>
 </body>
 </html>
