@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Defineix un objecte producte, amb els següents atributs: id, name, price, type i
+// assignalis valors.
+// • Ojo amb el valor id
+// • El type seria el tipus de producte, per exemple si estem a una botiga podria
+// ser: clothes, beauty, mejar ....
+// Crea diferents objectes amb valors diferents.
+// Accedeix a la propietat name del objecte1, fes el mateix amb l’objecte2....
+
+const bier1 = {
+    id : 1,
+    name : "Malta",
+    price : "3.95",
+    type : "bier",
+}
+const bier2 = {
+    id : 2,
+    name : "Doble malta",
+    price : "3",
+    type : "bier",
+}
+bier1.type
+console.log(bier1.type);
+console.log(bier2.price);
+console.log(bier2.id);
+
+// //Defineix l’objecte subTotal, amb un únic atribut que serà el type del objecte producte.
+// Aquest tipus tindrà un objecte aniuat que tindrà els atributs value, quantitat i
+// discount. Assignali valors.
+// Accedeix als atributs value, quantitat i discount, per un tipus concret.
+
+const subTotal = {
+    type : {
+        value : 20,
+        quantity : 25,
+        discount : 5,
+    }
+}
+
+console.log(subTotal.type.value);
+console.log(subTotal.type.quantity);
+console.log(subTotal.type.discount);
+
+// Crea l’objecte carList, que per defecte està buit.
+// Accedeix a l’objecte.
+
+const carList = {
+
+}
+console.log(carList);
+    </script>
+</body>
+</html>
