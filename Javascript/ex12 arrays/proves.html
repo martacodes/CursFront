@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    var inventari = [{
+            id : "01",
+            type : "CD",
+            artist : "Hola",
+            quantity : 5,
+            price : 10
+        },{
+            id : "02",
+            type : "vinyl",
+            artist : "Tx",
+            quantity : 6,
+            price : 8
+        },{
+            id : "03",
+            type : "CD",
+            artist : "Gutten",
+            quantity : 9,
+            price : 9
+        }];
+
+        var producto = {
+            id : "04",
+            type : "vinyl",
+            artist : "morgens",
+            quantity : 2,
+            price : 11
+        };
+      inventari.push(producto) //afegir producte al final
+
+        console.log(inventari);
+        
+        var newProduct = {
+            id : "05",
+            type : "CD",
+            artist : "blau",
+            quantity : 5,
+            price : 10
+        }
+
+        inventari.unshift(newProduct) //afegir producte al principi array
+        console.log(inventari);
+
+        //eliminar l'últim element
+        inventari.pop();
+        console.log(inventari);
+
+        //eliminar el primer element
+        inventari.shift()
+        console.log(inventari);
+        
+        //elimina elements entremig El primer paràmetre especifica la posició.
+        //El segon argument especifica el número d’elements que s’han d’esborrar.
+        inventari.splice(1,1);
+        console.log(inventari)
+    </script>
+  </body>
+</html>

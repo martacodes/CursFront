@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     //Funció que rebi dos nombres i retorni un array amb tots els nombres
+// compresos entre ells. El programa principal ha de mostrar aquest array per
+// consola.  
+
+let num1 = 2;
+let num2 = 20;
+
+// var llista = [];
+// function nombresCom(num1,num2) {
+// do {llista.push(num1); num1++
+// }
+// while (num1<num2);  
+// }
+// nombresCom(num1,num2);
+// console.log(llista);
+
+var llista2 = [];
+function nombresCom2(num1,num2) {
+    for (let index=num1+1; index <= num2 - 1; index++){
+        llista2.push(index)}
+    return llista2}
+
+var nova = nombresCom2(num1,num2);
+console.log(nova);
+    </script>
+</body>
+</html>

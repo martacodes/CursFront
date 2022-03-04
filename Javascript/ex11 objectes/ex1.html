@@ -19,16 +19,22 @@
 const bier1 = {
     id : 1,
     name : "Malta",
-    price : "3.95",
+    price : 3.95,
     type : "bier",
 }
 const bier2 = {
     id : 2,
     name : "Doble malta",
-    price : "3",
+    price : 3,
     type : "bier",
 }
-bier1.type
+const beauty1 = {
+    id : 3,
+    name : "Cosmetic",
+    price : 5,
+    type : "beauty"
+}
+
 console.log(bier1.type);
 console.log(bier2.price);
 console.log(bier2.id);
@@ -39,12 +45,19 @@ console.log(bier2.id);
 // Accedeix als atributs value, quantitat i discount, per un tipus concret.
 
 const subTotal = {
-    type : {
-        value : 20,
-        quantity : 25,
-        discount : 5,
-    }
+    bier : {
+        value : 0,
+        quantity : 0,
+        discount : 0,
+    },
+   beauty : {
+       value : 0,
+       quantity : 0,
+       discount : 0,
+   },
 }
+console.log("subtotal beauty value = " + subTotal.beauty.value);
+console.log("subtotal bier discount = " + subTotal.bier.discount);
 
 console.log(subTotal.type.value);
 console.log(subTotal.type.quantity);
@@ -52,11 +65,22 @@ console.log(subTotal.type.discount);
 
 // Crea l’objecte carList, que per defecte està buit.
 // Accedeix a l’objecte.
+// això és un arrai. REPASSAR
 
-const carList = {
+    const carList = [{
+        id = 1,
+        type = "bier",
+        price = 6.25,
+        discount = 20,
+    },{
+        id = 2,
+        type = "beauty",
+        price = 7,
+        discount = 30,
+    },]
 
-}
-console.log(carList);
+console.table(carList);
+console.log(carList[1].type)
     </script>
 </body>
 </html>
