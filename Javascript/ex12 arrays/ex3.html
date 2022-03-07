@@ -8,6 +8,15 @@
 </head>
 <body>
     <script>
+    /* Mostrat tots els productes del carrito.
+b) Mostrar els productes de més de 300€.
+c) Mostrar el total a pagar del carrito. (hem de sumar tots els preus.)
+d) Obtenir nous arrays, tenint en compte les següents condicions:
+a. Nuevo Array con Productos con precio > 400
+b. Nuevo Carrito con Productos con el nombre ‘Celular'
+c. Nuevo Carrito con todos los excepto ‘Laptop
+e) Comprova que en el carrito no hi hagi algun preu = 0 */
+
         // 1r mostrar tots els productes i després un if amb més de 300
 
         const carrito = [{
@@ -43,6 +52,43 @@ nombre: 'Laptop',
 precio: 800
 },
 ]
+//a. mostrat tots els productes del carrito
+console.log(carrito);
+
+//b. productes més de 300
+let mes300 = [];
+for (let index = 0; index < carrito.length; index++) {
+    if (carrito[index].precio > 300){
+        console.log("Producte: " + carrito[index].nombre + " preu: " + carrito[index].precio + "€")
+    };
+} 
+
+
+// carrito.forEach(carrito => {
+//     if (carrito.price <= 300) {
+//         mes300.push(carrito)
+//     } 
+//     return mes300;
+// });
+// let resposta = console.log(mes300)
+
+//c. 
+let total = [];
+carrito.forEach(carrito => {
+    total = parseInt(carrito.precio + total);
+    return total
+});
+let resultat = console.log(total);
+
+// //d. Obtenir nous arrays, tenint en compte les següents condicions:
+// a. Nuevo Array con Productos con precio > 400
+// b. Nuevo Carrito con Productos con el nombre ‘Celular'
+// c. Nuevo Carrito con todos los excepto ‘Laptop
+
+let carrito1 = carrito.filter(producto => producto.precio > 400);
+let carrito2 = carrito.filter(producto.nombre === "Celular");
+let carrito3 = carrito.filter(producto.nombre !== "Laptop");
+
 
     </script>
 </body>
