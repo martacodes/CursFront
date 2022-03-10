@@ -17,6 +17,60 @@
 // ● Almenys ha de contenir un caràcter especial.
 // Pots fer servir una funció per cada comprovació.
 
+let password = prompt("Entra una contrasenya!");
+
+function carac(password) {
+    if (password.length >= 8) {
+        return true
+    } else {
+        return false
+    }
+};
+console.log(carac(password));
+
+function maj(password) {
+    const maju = /([A-Z])/g
+    if (maju.test(password)) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(maj(password));
+function min(password) {
+    const minu = /([a-z])/g;
+    if (minu.test(password)) {
+        return true
+    }  else {
+        return false
+    }
+}
+
+function num(password) {
+    const numb = /([0-9])/g;
+    if (numb.test(password)) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function especial(password) {
+    const esp = /([?¿¡!ºª¨.:;,_¿])/;
+    if (esp.test(password)) {
+        return true
+    } else {
+        return false
+    }
+    
+} 
+
+if (carac(password) && maj(password) && min(password) && num(password) && especial(password)) {
+    console.log("La teva contrasenya és correcta")
+} else {
+    console.log("A la teva contrasenya hi manca algun dels elements anteriors");
+}
     </script>
 </body>
 </html>

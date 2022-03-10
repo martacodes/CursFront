@@ -13,6 +13,48 @@
         b. El resultat de l’operació anterior ha de correspondre a la posició del següent string:
         var lletres =”TRWAGMYFPDXBNJZSQVHLCKE”; */
         
+        var lletres = "TRWAGMYFPDXBNJZSQVHLCKE";
+        let dni = prompt("Escriu el teu DNI (8 números i una lletra")
+
+        //Busca si hi ha una lletra VALIDACIÓ
+        function buscarlletra(dni) {
+           let posicioLletra = dni.search(/[0-9]\w/);
+           return posicioLletra
+        }
+        let lletra = buscarlletra(dni);
+        console.log(lletra);
+
+        //divideix string en números i lletres
+        function dividirDni(dni) {
+            let divNum = dni.slice(0,(dni.length-1));
+            return divNum
+        };
+        let num = dividirDni(dni);//tinc el número del dni
+        console.log(num);
+
+        //parseint + modul per 23 per saber valor i quina lletra li correspon.
+        function modul(num) {
+            parseInt(num);
+            let resul = num%23;
+            return resul
+        }
+        let posicioNum = modul(num);
+        console.log(posicioNum);
+        console.log(lletres.charAt(posicioNum));
+        console.log(dni.charAt(dni.length-1));
+
+        //comparar lletra i posició.
+        function comparar(posicioNum,dni) {
+            if (lletres.charAt(posicioNum)== dni.charAt(dni.length-1)) { //compara la posició lletra a l'string donat i al DNI segons números i mòdul
+            window.alert("la lletra que has introduit és correcta!")
+        } else {
+            window.alert("La lletra que has posat és incorrecta.")
+        }}
+
+        let comparacioFi = comparar(posicioNum,dni);
+        console.log(comparacioFi);
+   
+
         </script>
 </body>
 </html>
