@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./Projecte/data.js"></script>
-    <script src="./Projecte/index.js"></script>
+    <script src="/Projecte/data.js"></script>
+    <script src="/Projecte/index.js"></script>
     <script>
 
 // En primer lloc, com tot e-commerce, farem que l'usuari pugui afegir productes al carret.
@@ -20,6 +20,22 @@
 buy(2);
 buy(3);
 console.log(cart);
+
+//cleanCart()
+// Ara implementarem una funció que permeti a l'usuari eliminar l’array generat en l'anterior:
+// En aquest cas, hauràs d’escriure la funció cleanCart(),i reinicialitzar la variable cartList.
+
+cleanCart();
+console.log(cart);
+
+// subtotal()
+// Com que ja tenim una versió bàsica del carret, crearem la funció que calculi els subtotals per a
+// cadascun dels tipus de productes.
+// El subtotal reflectirà l'import, no la quantitat de productes.
+
+fsubtotal();
+console.log(subTotal);
+
     </script>
 </body>
 </html>
