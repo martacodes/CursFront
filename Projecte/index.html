@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="/Projecte/data.js"></script>
-    <script src="/Projecte/index.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
     <script>
 
 // En primer lloc, com tot e-commerce, farem que l'usuari pugui afegir productes al carret.
@@ -19,22 +19,31 @@
 
 buy(2);
 buy(3);
-console.log(cart);
+buy(4);
+buy(1);
+console.table(cart);
 
 //cleanCart()
 // Ara implementarem una funció que permeti a l'usuari eliminar l’array generat en l'anterior:
 // En aquest cas, hauràs d’escriure la funció cleanCart(),i reinicialitzar la variable cartList.
 
-cleanCart();
-console.log(cart);
+// cleanCart();
+// console.log(cart);
 
 // subtotal()
 // Com que ja tenim una versió bàsica del carret, crearem la funció que calculi els subtotals per a
 // cadascun dels tipus de productes.
 // El subtotal reflectirà l'import, no la quantitat de productes.
 
-fsubtotal();
-console.log(subTotal);
+console.table(subtotal2());
+//onsole.log(subtotal2());
+
+//calculateTotal()
+// Genial, l'e-commerce va prenent forma! és el moment de calcular el total de l'import del
+// carret. Podràs fer-ho sumant els subtotals de cada categoria de producte calculats en
+// l'exercici anterior.
+// Ha de ser escalable. Imaginat que l'e-commerce creixés i tinguéssim 100 categories!
+console.log(calculateTotal());
 
     </script>
 </body>
