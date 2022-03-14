@@ -1,0 +1,14 @@
+* {
+    background: yellow;
+}
+.navmenu {
+    border: 2px coral solid;
+    border-radius: 15px;
+    background: blue;
+}
+#articles {
+    border: 1px black solid;
+    padding: 10px;
+    margin: auto;
+    width: 40%
+}

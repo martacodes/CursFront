@@ -38,7 +38,7 @@ function subtotal2() {
 
 function calculateTotal() {
   for (let i = 0; i < subtotal.length; i++) {
-    let total = subtotal.grocery.value + total;
+    totalGrocery = subtotal.grocery.value + total;
   }
   return total;
 }
