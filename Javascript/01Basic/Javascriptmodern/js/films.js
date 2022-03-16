@@ -27,33 +27,27 @@ function getPelisFromDirector(element) {
 // Per a això, hauràs d'implementar la funció pelisAverage(), la qual rep un array de pel·lícules
 // i retorna la nota mitjana, amb dos decimals.
 //
-function pelisAverage(element) {
-function getPelisFromDirector(element) {
-  const pelis = movies.filter(function(film){
-    return film.director === element;
+function pelisAverage(director) {
+  const pelis = movies.filter(function (film) {
+    return film.director === director;
   });
-  return pelis; 
-}
-function reduceScores (pelis) {
-const scores = pelis.reduce((comptador, film);
-comptador + film
-
-return scores
-}
-};
-
-function average(scores) {
-  const average = (scores / pelis.length) * pelis.length;
-  return average
+  console.log(pelis);
+  const scores = pelis.reduce(function (comptador, film) {//funciona com un foreach i compta cada valor de cada peli)
+    return comptador + film.score;
+  },0);
+  console.log(scores);
+  const average1 = (scores / pelis.length);
+  console.log(average1);
+  return average1;
 }
 
+// //4. Ara implementaràs la lògica per a ordenar les pel·lícules, part fonamental en qualsevol eina
+// de visualització de dades.
+// En aquest apartat, hauràs de crear una funció, que rebent un array de pel·lícules, el retorni
+// ordenat alfabèticament per títol. Només s'han de retornar les 20 primeres pel·lícules
+// ordenades..
+//és fa amb el sort. primer ordenar alfabeticament i posteriorment no.
+function sortAl(movie1, movie2) {
+const ordre = movies.sort(movie1,movie2)
+return movie1 - movie2};
 
-
-//   let mitjana = [];
-//   mitjana = score.reduce(function (average) {
-//     //for (let index = 0; index < pelis.length; index++) {
-//     const averagetotal = (pelis.score / pelis.length) * pelis.length;
-//     return averagetotal;
-//   });
-//   return mitjana;
-// }
