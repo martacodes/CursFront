@@ -7,23 +7,31 @@
 // • el className d’algun dels links
 // • totes les imatges
 
-let element;
+let elemento;
 
-element = document;
-console.log(element);
+console.log("------ Documento ------------");
+elemento = document;
+console.log(elemento);
 
-element = document.body;
-console.log(element);
+console.log("------ body ------------");
+elemento = document.body;
+console.log(elemento);
 
-element = document.getElementById("formulario");
-console.log(element);
+console.log("------ Form ------------");
+elemento = document.forms[0].id;
+console.log(elemento);
 
-// element = document.link;
-// console.log(element);
+console.log("------ Links ------------");
+elemento = document.links;
+console.log(elemento);
 
-element = document.img;
-console.log(element);
+console.log("------ Classname 4t Link ------------");
+elemento = document.links[4].className;
+console.log(elemento);
 
+console.log("------ Images ------------");
+elemento = document.images;
+console.log(elemento);
 
 
 
