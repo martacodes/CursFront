@@ -13,21 +13,18 @@
 //   console.log("es mostra card");
 //   clicar1.stopPropagation();
 // });
-// // console.log(cardDiv);
 
 // const infoDiv = document.querySelector(".info");
 // infoDiv.addEventListener("click", (clicar2) => {
 //   console.log("es mostra info");
 //   clicar2.stopPropagation();
 // });
-// // console.log(infoDiv);
 
 // const titulo = document.querySelector(".titulo");
 // titulo.addEventListener("click", (clicar3) => {
 //   console.log("això és el títul");
 //   clicar3.stopPropagation();
 // });
-// console.log(titulo);
 
 //amb switch
 
@@ -51,9 +48,3 @@ function clicar(event) {
       break;
   }
 }
-// function clicar(e) {
-//   //ha de ser amb 3 funcions. per separat.
-//   let element = e.target.className;
-//   console.log("es mostra " + element);
-//   e.stopPropagation();
-// }
