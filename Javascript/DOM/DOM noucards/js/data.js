@@ -11,49 +11,57 @@ var products = [
         id: 2,
         name: 'Pasta',
         price: 6.25,
-        type: 'grocery'
+        type: 'grocery',
+        img: "assets/img/product_single_02.jpg"
     },
     {
         id: 3,
         name: 'Instant cupcake mixture',
         price: 5,
-        type: 'grocery'
+        type: 'grocery',
+        img: "assets/img/product_single_03.jpg"
     },
     {
         id: 4,
         name: 'All-in-one',
         price: 260,
-        type: 'beauty'
+        type: 'beauty',
+        img: "assets/img/product_single_04.jpg"
     },
     {
         id: 5,
         name: 'Zero Make-up Kit',
         price: 20.5,
-        type: 'beauty'
+        type: 'beauty',
+        img: "assets/img/product_single_05.jpg"
     },
     {
         id: 6,
         name: 'Lip Tints',
         price: 12.75,
-        type: 'beauty'
+        type: 'beauty',
+        img: "assets/img/product_single_06.jpg"
     },
     {
         id: 7,
         name: 'Lawn Dress',
         price: 15,
-        type: 'clothes'
+        type: 'clothes',
+        img: "assets/img/product_single_07.jpg"
     },
     {
         id: 8,
         name: 'Lawn-Chiffon Combo',
         price: 19.99,
-        type: 'clothes'
+        type: 'clothes',
+        img: "assets/img/product_single_08.jpg"
     },
     {
         id: 9,
         name: 'Toddler Frock',
         price: 9.99,
-        type: 'clothes'
+        type: 'clothes',
+        img: "assets/img/product_single_09.jpg"
     }
 ]
 // Array with products (objects) added directly with push(). Products in this array are repeated.
