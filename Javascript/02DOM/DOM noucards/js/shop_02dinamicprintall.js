@@ -1,4 +1,4 @@
-// modificar primera card dinàmicament.
+// modificar  card dinàmicament.
 document.addEventListener("DOMContentLoaded", printCard()); 
  //afegir listener i acció a fer.
 function printCard() {

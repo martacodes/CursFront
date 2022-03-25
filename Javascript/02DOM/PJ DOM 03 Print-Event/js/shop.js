@@ -161,16 +161,22 @@ function removeFromCart(id) {
     pintarCarrito();
 }
 
-
+///REVISAR aquest es la funció
 //pintarCarrito LA FUNCIÓ
 
 function pintarCarrito(cart) {
+    const items = document.querySelector("#items");
+    items.innerHTML = " ";
+
   cart.forEach((item) => {
     templateCarrito.querySelector("th").textContent = item.id;
     templateCarrito.querySelectorAll("td")[0].textContent = item.name;
     templateCarrito.querySelectorAll("td")[1].textContent = item.price;
     templateCarrito.querySelectorAll("td")[2].textContent = item.quantity;
     templateCarrito.querySelector("span").textContent = item.subtotal;
+    const clone = templateCarrito.cloneNode(true)
+    fragment.appendChild(clone)
   });
+  items.appendChild(fragment)
 }
 
