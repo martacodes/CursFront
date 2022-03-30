@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="missatge">
+    </div>
+    <template id="exemple">
+        <div>
+            <b>{{missatge}}</b>
+        </div>
+    </template>
+    <!--l'script va abaix-->
+    <script>
+        const miss = new Vue({
+            el: "#missatge",
+            template: "#exemple",
+            data: {
+                missatge: "Benvinguda!",
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A First App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <label for="goal">Goal</label>
+      <input type="text" id="goal" v-model="enteredValue" />
+      <button v-on:click="addGoal">Add Goal</button>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    const app = new Vue({
+      el: "#app",
+      data: {
+        goal: [],
+        enteredValue: " ",
+      },
+      methods: {
+        addGoal: function () {
+          this.goal.push(this.enteredValue)
+          console.log(this.goal);
+          console.log("You've entered" + this.enteredValue);
+          this.enteredValue = " "
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>

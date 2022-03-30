@@ -86,9 +86,12 @@ let resultat = console.log(total);
 // c. Nuevo Carrito con todos los excepto ‘Laptop
 
 let carrito1 = carrito.filter(producto => producto.precio > 400);
-let carrito2 = carrito.filter(producto.nombre === "Celular");
+let carrito2 = carrito.filter(producto => (producto.nombre === "Celular"));
 let carrito3 = carrito.filter(producto.nombre !== "Laptop");
 
+console.log(carrito1 + "carrito1 filter");
+console.log(carrito2 + "carrito2 filter");
+console.log(carrito3 + "carrito3 filter");
 
     </script>
 </body>
