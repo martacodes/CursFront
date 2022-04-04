@@ -11,12 +11,16 @@
   <div id="app"></div>
 
   <template id="ejemplo">
-    <div>     
-        <b>{{ mensaje }}</b>
-        <img :src="imagen" />      
-      <button @click="toggleMostrar">Mostrar/Ocultar</button>
+    <div>
+      <div v-show="mostrar">
+      <b>{{ mensaje }}</b>
+      <img :src="imagen" />
+      <p v-for="elements in cursos">
+        <a v-bind:href="elements.url">{{ elements.name }} </a></p>
     </div>
-  </template>  
+    <button @click="toggleMostrar">Mostrar/Ocultar</button>
+    </div>
+  </template>
 
   <!--OJO això ha d'estar aquí al final -->
   <script src="js/javascript.js"></script>

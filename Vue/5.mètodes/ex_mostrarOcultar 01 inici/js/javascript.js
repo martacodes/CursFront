@@ -24,6 +24,7 @@ methods: {
   toggleMostrar: function () {
     if (this.mostrar == true) {
       alert("mostrar és igual a true");
+      
       this.mostrar = false;
     } else {
       alert("mostrar és igual a false");

@@ -12,6 +12,8 @@ var demo = new Vue({
 
         // Functions we will be using.
         methods: {
-               
+                makeActive: function() {
+                        
+                }
         }
 });

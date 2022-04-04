@@ -13,8 +13,9 @@
   <div id="app">
     <div>
       <label for="goal">Goal</label>
-      <input type="text" id="goal" v-model="enteredValue" />
+      <input type="text" id="goal" v-model="enteredValue" /> <!-- v-on:keypress="addGoal"--keypress serveix per si apretes qualsevol lletra ho entri-->
       <button v-on:click="addGoal">Add Goal</button>
+      <p v-for="elements in goal">{{elements}}</p>
     </div>
 
   </div>
