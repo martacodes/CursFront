@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +10,40 @@
 </head>
 <!-- crear app amb llista de paisos i que amb una cerca
 faci un filtre amb la variable computada-->
+
 <body>
     <div id="my-app">
-<h1>{{message}}</h1>
-<ul>
-    <li v-for="(country, index) in countries" :value="index">{{country}}</li>
-</ul>
+        <h1>{{message}}</h1>
+        <ul>
+            <li v-for="(country, index) in countries" :value="index">{{country}}</li>
+        </ul>
+        <p> Escriu un país: <input type="text" v-model="countryFil"></p>
+        <ul>
+            <li v-for="filteredCountries">{{filteredCountries}}</li>
+        </ul>
     </div>
 
-<script>
-    const app = new Vue({})
-</script>
+    <script>
+        const app = new Vue({
+                    el: "#my-app",
+                    data: {
+                        message: "Aquí escriurem una llista de països i a través d'un filtre es renderitzaran els que coincideixin",
+                        countries: ["França", "Bèlgica", "Andorra", "Espanya", "Alemanya", "Hongria"],
+                        countryFil: "",
+                    },
+                    computed: {
+                        filteredCountries: function () {
+                            if (this.country === countryFil) {
+                                return this.countries;
+                            } else {
+                                return this.countries.filter(element => element.toUpperCase().includes(this.country
+                                    .toUpperCase()))
+                            }
+                        }
+
+                    }
+                })
+    </script>
 </body>
+
 </html>

@@ -17,19 +17,22 @@
       </style>
       
       <div id = "databinding" >
-         <h1>Benvinguda:</h1> 
+         <h1>Benvinguda: {{name}}</h1> 
          <h1>Currency Converter</h1>         
          <span>Enter Amount:</span>
-         <input type = "number"  placeholder = "Enter Amount" /><br/><br/>
+         <input type = "number"  placeholder = "Enter Amount" v-model="amount"/><br/><br/>
          <span>Convert From:</span>
-         <select style="width:300px;font-size:25px;">
-            <option value="from" >From</option>
+         <select v-model= "convertfrom" style="width:300px;font-size:25px;">
+            <option v-for="element in currencyfrom" v-bind:value="element.name">{{element.desc}}</option>
          </select>
          <span>Convert To:</span>
-         <select v-model = "convertto" style = "width:300px;font-size:25px;">
-            <option value="to" >to</option>
+       <select v-model= "to" style = "width:300px;font-size:25px;">
+            <option v-for="element in currencyfrom" v-bind:value="element.name">{{element.desc}}</option>
          </select><br/><br/>
+         <span>{{convertfrom }}  {{to }} {{amount}} {{convertTo}}</span>
+
       </div>
       
    </body>
+   <script src="./app.js" type="text/javascript"></script>
 </html>
