@@ -7,29 +7,49 @@ const app = new Vue({
                 title: 'Curso introductorio JavaScript',
                 subtitle: 'Aprende lo básico en JS',
                 description: 'En este curso explicaremos de la mano de los mejores profesores JS los principios básicos',
-                type: 'course-js'
+                type: 'course-js',
+                price: 900
             },
             {
                 id: 2,
                 title: 'Curso avanzado JavaScript',
                 subtitle: 'Aprende lo avanzado en JS',
                 description: 'En este curso explicaremos de la mano de los mejores profesores JS los principios avanzados',
-                type: 'course-js'
+                type: 'course-js',
+                price: 900
             },
             {
                 id: 3,
                 title: 'Curso introductorio Cascading Style Sheets',
                 subtitle: 'Aprende lo básico en CSS',
                 description: 'En este curso explicaremos de la mano de los mejores profesores CSS los principios básicos',
-                type: 'course-css'
+                type: 'course-css',
+                price: 900
             },
             {
                 id: 4,
                 title: 'Curso avanzado Cascading Style Sheets',
                 subtitle: 'Aprende lo avanzado en CSS',
                 description: 'En este curso explicaremos de la mano de los mejores profesores CSS los principios básicos',
-                type: 'course-css'
-            }                        
+                type: 'course-css',
+                price: 900
+            },
+            {
+                id: 5,
+                title: 'Curso introductorio Vue',
+                subtitle: 'Aprendre lo básico de Vue',
+                description: 'En este curso explicaremos de la mano de los mejores profesores Vue',
+                type: 'course-vue',
+                price: 900
+            },
+            {
+                id: 6,
+                title: 'Curso avanzado Vue',
+                subtitle: 'Aprende lo avanzado en Vue',
+                description: 'En este curso explicaremos de la mano de los mejores profesores Vue',
+                type: 'course-vue',
+                price: 900
+            }            
         ],
         cart: []
     },

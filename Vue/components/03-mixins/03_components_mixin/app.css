@@ -82,3 +82,8 @@ body {
 .course.course-css .course-footer button {
     background: #FDD835;
 }
+
+.course.course-vue .course-header,
+.course.course-vue .course-footer button {
+    background: #FF5733;
+}
