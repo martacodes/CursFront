@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+</head>
+
+<body>
+
+    <div id="my-app">
+        <p>{{name}}</p>
+        <button @click="onAdd">Suma {{count}}</button>
+        <my-button></my-button>
+        <my-button></my-button>
+        <user-detail v-bind:first="firstname" v-bind:last="lastname"></user-detail>
+    </div>
+
+</body>
+<script src="./component.js"></script>
+<script src="./app.js"></script>
+    <!--el component ha de veure el seu pare #my-app-->
+</html>
