@@ -50,6 +50,8 @@
          width: 30%;
       }
    </style>
+
+
    <div id="databinding">
       <h1>Customer Details</h1>
       <span>First Name</span>
@@ -61,8 +63,9 @@
       <button v-on:click="showdata">Add</button>
       <br /> <br />
 
-      <costumercomponent v-for="(item, index) in custdet" v-bind:itr="item" v-bind:index="index" v-bind:key="item.fname"
-      v-on:removeelement="eliminar($event,index)"> </costumercomponent>
+      <customercomponent v-for="(item, index) in custdet"   v-bind:itr="item" v-bind:index="index" v-bind:key="item.fname"
+         v-on:removeelement="eliminar($event,index)">
+      </customercomponent> 
    </div>
    <!--removeelement és la connexió pare-fill o revés-->
    <script type="text/javascript" src="app.js"></script>
