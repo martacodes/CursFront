@@ -52,7 +52,10 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #d5fcff;
+  color: #000;
+  text-decoration: none;
 }
-
+a ::hover {
+  color: #979797
+}
 </style>

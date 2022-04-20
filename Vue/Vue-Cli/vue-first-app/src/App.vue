@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/img1.jpg" style= "height=500px">
+  <img alt="analog photograhy" src="./assets/img1.jpg" style="width: 600px">
   <HelloWorld msg="Marta Farré"/>
+  <first-component />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import firstComponent from './components/firstComp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+   //HelloWorld
+    firstComponent
   }
 }
 </script>
