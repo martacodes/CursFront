@@ -55,7 +55,5 @@ a {
   color: #000;
   text-decoration: none;
 }
-a ::hover {
-  color: #979797
-}
+
 </style>
